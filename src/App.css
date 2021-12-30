@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+html, body{
+overflow-x:hidden ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-row{
+    overflow-x: auto;
+    flex-wrap: nowrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-row .card-body{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    bottom: 0px;
+    left:0px;
+    z-index: 1;
+    color:#fff;
+    font-size: 12px;
+    width:100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-height img{
+    height: 100%;
+    object-fit: cover;
 }
-
-.App-link {
-  color: #61dafb;
+.clear-padd{
+    padding:0px !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-dropdown .dropdown-toggle{
+  background: none !important;
+  border:none !important;
+  margin-left: 25px;
+}
+.top-dropdown:focus, .top-dropdown:active, .dropdown-toggle:focus{
+    outline: none;
+    outline: 0px;
+}
+.me-auto a{
+    color:#fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.fav-button{
+    position: absolute;
+    display: none;
+    bottom:50%;
+    left:50%;
+    z-index: 999;
+    border-radius:0px;
+    transform:translate(-50%, -50%);
+}
+.col{
+    position: relative;
+}
+.col:hover .fav-button{
+  display: block;
+}
+.detail-card{
+        max-width:420px;
+}
+.typehead{
+    width:100%;
+    position: fixed;
+    height: calc(100vh - 57px);
+    overflow-y: auto;
+    left:0px;
+    z-index: 99;
+    top:57px;
+    background: rgba(255,255,255,0.8);
+    min-height: 300px;
+    padding-top: 15px;
+}
+.t-card, .t-card img{
+    border-radius: 0px !important;
+}
+.t-col{
+    margin-bottom: 15px;
+    font-size: 12px !important;
+    text-align: center;
+}
+@media (min-width:768px){
+    .custom-height, .carousel-item{
+        height: 650px;
+    }
+}
+@media (max-width:768px){
+    .custom-height, .carousel-item{
+        height: 250px;
+    }
 }

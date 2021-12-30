@@ -1,3 +1,11 @@
+# React Movie App
+
+Concepts included
+React Basic stuffs
+React Router
+Hooks
+
+Context hook for state managment
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
