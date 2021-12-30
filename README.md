@@ -1,11 +1,8 @@
 # React Movie App
-
-Concepts included
-React Basic stuffs
-React Router
-Hooks
-
-Context hook for state managment
+# Concepts included
+# 1. React Basic stuffs
+# 2. React Router 6
+# 3. Hooks useState, useEffect, useContext
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
