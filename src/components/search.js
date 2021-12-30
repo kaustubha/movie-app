@@ -38,7 +38,7 @@ export default function SearchMovie(){
                                     <Col lg={2} className="d-flex t-col">
                                         <Link to={`/details/${item.media_type}/${item.id}`}>
                                         <Card className="bg-dark text-white t-card" style={{ width: '160px' }} onClick={()=>closeTypeahed()}>
-                                            <Card.Img src={`${all_constants.IMG_PATH.BASE_URL}${item.poster_path}`} alt="Card image" />
+                                        <Card.Img src={item.poster_path != undefined ? `${all_constants.IMG_PATH.BASE_URL}${item.poster_path}` : `${all_constants.IMG_PATH.BASE_64}`} alt="Card image" />
                                             <Card.Title>{item.original_title}</Card.Title>
                                         </Card>
                                         </Link>
